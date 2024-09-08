@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922535046488",
+    "project_id": "knowyouralumni-196dd",
+    "storage_bucket": "knowyouralumni-196dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922535046488:android:50495c7964eec9846f092d",
+        "android_client_info": {
+          "package_name": "com.example.know_your_alumni"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrbdt6-XW-tw80EA7Sb9e2E3IA4qAYbfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
