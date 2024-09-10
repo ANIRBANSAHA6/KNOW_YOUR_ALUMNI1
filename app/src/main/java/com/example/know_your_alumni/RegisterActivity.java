@@ -48,7 +48,6 @@ public class RegisterActivity extends AppCompatActivity {
                     db.register(collegeId, password);
                     Toast.makeText(this, "RECORD INSERTED", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(RegisterActivity.this, VerifyActivity.class));
-
                 } else {
                     Toast.makeText(this, "password is not written correctly", Toast.LENGTH_SHORT).show();
                 }

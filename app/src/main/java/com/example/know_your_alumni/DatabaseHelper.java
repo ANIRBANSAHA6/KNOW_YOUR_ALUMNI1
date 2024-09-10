@@ -35,7 +35,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         db.insert("users",null,cv1);
         db.close();
-
-
     }
 }
