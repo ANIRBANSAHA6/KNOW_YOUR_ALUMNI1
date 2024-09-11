@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <!-- User Name and Follow Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Name"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="?attr/colorPrimary"/>
+    </LinearLayout>
+
+    <!-- Post Caption -->
+    <TextView
+        android:id="@+id/post_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <!-- Post Image -->
+    <View
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/post_caption"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Post Image"/>
+
+    <!-- Like, Share, Comment Buttons with Reaction Overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/post_image"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:id="@+id/like_button_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/like_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="?attr/colorPrimary"/>
+
+            <!-- Reaction Animation Placeholder -->
+            <ImageView
+                android:id="@+id/reaction_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/comment_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comment"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="?attr/colorPrimary"/>
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Share"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="?attr/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>

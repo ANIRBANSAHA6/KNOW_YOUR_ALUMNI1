@@ -14,6 +14,7 @@
         >
 
         <ImageView
+            android:id="@+id/back_from_post"
             android:layout_width="30dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"

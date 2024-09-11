@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KNOW_YOUR_ALUMNI</string>
+    <string-array name="enter_your_roles">
+        <item>Student</item>
+        <item>Alumni</item>
+        <item>Teacher</item>
+    </string-array>
+
+    <string name="we_will_send">we will send a confirmation code on your mobile number</string>
+
+
+    <string name="Open_Drawer">Open Navigation Drawer</string>
+    <string name="Close_Drawer">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -38,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
             String collegeId = id.getText().toString().trim();
             String password = pass.getText().toString().trim();
             String confirm = et_confirm.getText().toString().trim();
-            DatabaseHelper db = new DatabaseHelper(getApplicationContext(), "college_details", null, 1);
+            DatabaseHelper db = new DatabaseHelper(getApplicationContext());
 
             if (collegeId.length() == 0 || password.length() == 0) {
                 Toast.makeText(this, "PLEASE FILL THE FUCKING DETAILS !!", Toast.LENGTH_SHORT).show();
