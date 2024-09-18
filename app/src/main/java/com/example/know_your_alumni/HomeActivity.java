@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home); // Your home layout
 
         recyclerView = findViewById(R.id.recycler_view); // Assume you have a RecyclerView in home.xml
-        Button follow = findViewById(R.id.follow_button);
+        //Button follow = findViewById(R.id.follow_button);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Initialize the list for posts
@@ -48,16 +48,8 @@ public class HomeActivity extends AppCompatActivity {
         loadPosts();
 
         // Set up the adapter with the updated post list
-        postAdapter = new PostAdapter(this, postList);        recyclerView.setAdapter(postAdapter);
-
-        follow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                follow.setBackgroundColor(Color.BLACK);
-                follow.setTextColor(Color.WHITE);
-            }
-        });
-
+        postAdapter = new PostAdapter(this, postList);
+        recyclerView.setAdapter(postAdapter);
 
 
     }
